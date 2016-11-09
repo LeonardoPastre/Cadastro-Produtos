@@ -1,0 +1,18 @@
+program Cadastro;
+
+uses
+  Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {FrmPrincipal},
+  uProdutos in 'uProdutos.pas',
+  uFrmProdutos in 'uFrmProdutos.pas' {FrmProdutos},
+  uDataModule in 'uDataModule.pas' {Dm: TDataModule},
+  uFuncoes in 'uFuncoes.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TDm, Dm);
+  Application.Run;
+end.
